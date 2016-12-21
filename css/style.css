@@ -1,0 +1,136 @@
+body {
+	background-image: url(../img/bgc.jpg); 
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: white; 
+	font-family: Tahoma, serif;
+	color: #5fa5bb;
+}
+
+/* HEADER */
+
+header {
+	height: 176px;
+}
+
+header a img {
+	float: left;
+	margin-top: 12px;
+	margin-left: 27px;
+}
+
+.contacts {
+	float: right;
+	margin-right: 32px;
+	font-size: 12px;
+}
+
+.contacts p {
+	margin: 12px 0;
+	font-weight: bold;
+}
+
+.contacts ul li {
+	padding-bottom: 4px;
+}
+
+.contries {
+	padding: 113px 32px 10px 640px;
+	font-size: 10px;
+}
+
+figure {
+	display: inline-block;
+	padding: 0 3.5px;
+	text-align: center;
+}
+
+/* MAIN */
+
+main {
+	position: relative;
+}
+
+.photo img {
+	border-top: 1px solid #138aa7;
+	border-bottom: 1px solid #138aa7;
+}
+
+/* MENU */
+
+.menu ul.main {
+	display: block;
+	background-image: linear-gradient(#303030, #373737);
+	height: 31px;
+	line-height: 29px;
+	font-size: 14px;
+	color: white;
+	padding-left: 33px;
+	border-bottom: 1px solid black;
+}
+
+ul.main > li {
+	float: left;
+	position: relative;
+	margin: 0 23px;
+	padding: 0 12px;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	width: 120%;
+	left: 0; 
+	background-image: linear-gradient(#303030, #373737);
+	border-top: 1px solid black;
+}
+
+.submenu > li {
+	padding-left: 12px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+
+li:hover > .submenu {
+	display: block;
+}
+
+span {
+	font-size: 10px;
+}
+
+/* INFO */
+
+.info {
+	float: left;
+	width: 210px;
+	margin-top: -26px;
+	color: #424c43;
+	background-color: #edeef0;
+	border-right: 1px solid #c7cacf;
+}
+
+.info p {
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 17px;
+	padding-right: 20px;
+}
+
+.news {
+	float: right;
+	width: 210px;
+	margin-top: -26px;
+	color: #424c43;
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+}
