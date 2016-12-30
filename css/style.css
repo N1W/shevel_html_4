@@ -14,15 +14,18 @@ body {
 	background-color: white; 
 	font-family: Tahoma, serif;
 	color: #5fa5bb;
+	box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.8);
+	overflow: hidden;
 }
 
 /* HEADER */
 
 header {
+	position: relative;
 	height: 176px;
 }
 
-header a img {
+a.logo {
 	float: left;
 	margin-top: 12px;
 	margin-left: 27px;
@@ -44,7 +47,9 @@ header a img {
 }
 
 .contries {
-	padding: 113px 32px 10px 640px;
+	position: absolute;
+	right: 32px;
+	bottom: 11px;
 	font-size: 10px;
 }
 
@@ -58,9 +63,11 @@ figure {
 
 main {
 	position: relative;
+
 }
 
 .photo img {
+	margin-top: -3px;
 	border-top: 1px solid #138aa7;
 	border-bottom: 1px solid #138aa7;
 }
@@ -70,8 +77,8 @@ main {
 .menu ul.main {
 	display: block;
 	background-image: linear-gradient(#303030, #373737);
-	height: 31px;
-	line-height: 29px;
+	height: 28px;
+	line-height: 28px;
 	font-size: 14px;
 	color: white;
 	padding-left: 33px;
@@ -81,7 +88,7 @@ main {
 ul.main > li {
 	float: left;
 	position: relative;
-	margin: 0 23px;
+	margin: 0 20px;
 	padding: 0 12px;
 }
 
@@ -91,7 +98,6 @@ ul.main > li {
 	width: 120%;
 	left: 0; 
 	background-image: linear-gradient(#303030, #373737);
-	border-top: 1px solid black;
 }
 
 .submenu > li {
@@ -102,10 +108,11 @@ ul.main > li {
 
 li:hover > .submenu {
 	display: block;
+	z-index: 1;
 }
 
 span {
-	font-size: 10px;
+	font-size: 11px;
 }
 
 li:hover {
@@ -114,23 +121,63 @@ li:hover {
 
 /* INFO */
 
-.colomns {
-	width: 1000px;
-	float: left;
-	margin-top: -26px;
-	background-image: url(../img/colomn.jpg);
-}
-
 h1 {
 	margin: 15px 50px;
 	font-size: 18px;
 	font-weight: bold;
 }
 
-.info {
+.fon1 { 
+	width: 100%;
+	background: #edeef0;
+	float: left; 
+	position: relative; 
+	right: 54%; 
+	border-right: 1px solid #c7cacf;
+}
+
+.fon2 {
+	width: 100%;
+	background: #fff;
 	float: left;
-	width: 213px;
+	position: relative;
+	right: 23%;
+	border-right: 1px solid #c7cacf;
+}
+
+.fon3 {
+	width: 100%;
+	background: #edeef0;
+	float: left;
+}
+
+.leftColumn {
+	float: left;
+	width: 23%;
+	overflow: hidden;
 	color: #424c43;
+	position: relative;
+	left: 77%;
+	text-align: center;
+}
+
+.centerColumn {
+	width: 54%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 77%;
+	text-align: center;
+}
+
+.rightColumn {
+	float: left;
+	width: 23%;
+	color: #424c43;
+	overflow: hidden;
+	position: relative;
+	left: 77%;
+	text-align: center;
 }
 
 .colomns p {
@@ -138,12 +185,6 @@ h1 {
 	line-height: 24px;
 	padding-left: 17px;
 	padding-right: 20px;
-}
-
-.news {
-	float: right;
-	width: 213px;
-	color: #424c43;
 }
 
 footer p {
